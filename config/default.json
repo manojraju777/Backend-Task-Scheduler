@@ -1,0 +1,16 @@
+{
+    "server": {
+        "port": "3000",
+        "host": "localhost",
+        "logLevel": "info"
+    },
+    "maxPaginationSize": 30,
+    "mongodb": {
+        "baseURL": "mongodb://localhost:27017/",
+        "dbName": "task-scheduler",
+        "debug": "false",
+        "username": "$MONGODB_USER",
+        "password": "$MONGODB_PASSWORD",
+        "poolSize": 10
+    }
+}

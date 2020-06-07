@@ -1,0 +1,12 @@
+use task-scheduler
+
+db.createUser(
+  {
+    user: "taskScheduler",
+    pwd:  passwordPrompt(),
+    roles: [ { role: "readWrite", db: "task-scheduler" } ]
+  }
+)
+
+db.createCollection("tasks")
+
